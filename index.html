@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGAN'S DESIGN - Creative Solutions</title>
+    <meta id="metaDescription" name="description" content="Official website for LOGAN'S DESIGN, offering services in Graphic Design, Branding, Printing, Interior Decoration, Fashion Design, and Web Design.">
+    <meta name="keywords" content="Graphic Design, Branding, Printing, Interior Decoration, Fashion Design, Web Design, 3D Logo Design, Creative Solutions, Logan Thomas Jr, Liberia, Monrovia">
+    <meta name="author" content="LOGAN'S DESIGN">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="ogUrl" content="">
+    <meta property="og:title" id="ogTitle" content="">
+    <meta property="og:description" id="ogDescription" content="">
+    <meta property="og:image" id="ogImage" content="">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json" id="schemaOrgMarkup"></script>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.svg" alt="LOGAN'S DESIGN Logo" class="logo-image" id="headerLogoImage">
+                <h1 class="logo-text" id="siteTitleDisplay">LOGAN'S DESIGN</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About Us</a></li>
+                    <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+                    <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact Us</a></li>
+                    <li><a href="#terms" class="nav-link" data-section="terms">Terms & Conditions</a></li>
+                    <li><a href="#quote" class="nav-link" data-section="quote">Request a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active-section">
+            <div class="container">
+                <h2>Welcome to LOGAN'S DESIGN</h2>
+                <div class="slideshow-container" id="slideshowContainer">
+                    <!-- Slides will be injected by JS -->
+                    <a class="prev" aria-label="Previous slide">&#10094;</a>
+                    <a class="next" aria-label="Next slide">&#10095;</a>
+                </div>
+                <div class="slideshow-dots" id="slideshowDotsContainer">
+                    <!-- Dots will be injected by JS -->
+                </div>
+                <div class="editable-container">
+                    <p class="tagline">
+                        <span data-editable-content-id="homeTagline">Creative Solutions, Beautifully Executed.</span>
+                    </p>
+                    <div class="edit-controls-container" data-controls-for="homeTagline"></div>
+                </div>
+                <p>We offer a comprehensive suite of design services, from branding and graphic design to web development and interior decoration. Discover how we can elevate your brand and bring your ideas to life.</p>
+                <button id="shareButton" class="cta-button share-button">Share &nbsp; &#x21E7;</button>
+
+                <div class="share-buttons" id="socialShareContainer">
+                    <p>Or share on:</p>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_WEBSITE_URL" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" width="30" alt="Facebook">
+                    </a>
+                    <!-- X (Twitter) -->
+                    <a href="https://twitter.com/intent/tweet?url=YOUR_WEBSITE_URL&text=Check%20out%20LOGAN'S%20DESIGN!" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" width="30" alt="X">
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=YOUR_WEBSITE_URL" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="30" alt="LinkedIn">
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/?text=Check%20out%20LOGAN'S%20DESIGN:%20YOUR_WEBSITE_URL" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp">
+                      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" width="30" alt="WhatsApp">
+                    </a>
+                </div>
+
+                <div class="featured-work-section">
+                    <h2>Featured Work</h2>
+                    <div class="featured-work-grid" id="featuredWorkGrid">
+                        <!-- Featured work items will be dynamically inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="home-services-section">
+                    <h2>Our Design Services</h2>
+                    <div class="services-grid" id="homeServicesGrid">
+                        <!-- Service items will be dynamically inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="slideshow-container" id="aboutSlideshowContainer">
+                    <!-- Slides will be injected by JS -->
+                    <a class="prev" aria-label="Previous slide">&#10094;</a>
+                    <a class="next" aria-label="Next slide">&#10095;</a>
+                </div>
+                <div class="slideshow-dots" id="aboutSlideshowDotsContainer">
+                    <!-- Dots will be injected by JS -->
+                </div>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="aboutIntro">LOGAN'S DESIGN is a passionate and innovative design studio dedicated to delivering exceptional creative solutions. Our mission is to empower businesses and individuals through compelling design that communicates effectively and inspires action.</span></p>
+                    <div class="edit-controls-container" data-controls-for="aboutIntro"></div>
+                </div>
+                <h3>Our Mission</h3>
+                <div class="editable-container">
+                     <p><span data-editable-content-id="missionText">To provide high-quality, impactful design services that help our clients achieve their goals and stand out in their respective markets.</span></p>
+                    <div class="edit-controls-container" data-controls-for="missionText"></div>
+                </div>
+                <h3>Our Vision</h3>
+                 <div class="editable-container">
+                    <p><span data-editable-content-id="visionText">To be a leading force in the design industry, recognized for our creativity, strategic thinking, quality craftsmanship, and unwavering client-centric approach.</span></p>
+                    <div class="edit-controls-container" data-controls-for="visionText"></div>
+                </div>
+
+                <div class="ceo-section">
+                    <h3>Meet the CEO</h3>
+                    <div class="ceo-content">
+                        <img src="" alt="Photo of the CEO" id="ceoImageDisplay" class="ceo-image">
+                        <div class="ceo-text">
+                            <h4 id="ceoNameDisplay"></h4>
+                            <p id="ceoMessageDisplay"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Our Design Services</h2>
+                <div id="serviceFilters" class="gallery-filters">
+                    <!-- Service filter buttons will be dynamically inserted here -->
+                </div>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Service items will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="slideshow-container" id="portfolioSlideshowContainer">
+                    <!-- Slides will be injected by JS -->
+                    <a class="prev" aria-label="Previous slide">&#10094;</a>
+                    <a class="next" aria-label="Next slide">&#10095;</a>
+                </div>
+                <div class="slideshow-dots" id="portfolioSlideshowDotsContainer">
+                    <!-- Dots will be injected by JS -->
+                </div>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="portfolioIntro">A showcase of our past works, demonstrating our expertise and creativity across various design disciplines.</span></p>
+                     <div class="edit-controls-container" data-controls-for="portfolioIntro"></div>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Portfolio items will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <div class="container">
+                <h2>Photo & Video Gallery</h2>
+                <p>Explore our collection of photos and videos showcasing our work and creative process.</p>
+                <div class="search-container">
+                    <label for="gallerySearchInput" class="sr-only">Search Gallery by Title</label>
+                    <input type="search" id="gallerySearchInput" placeholder="Search by title..." aria-label="Search gallery by title">
+                </div>
+                <div id="galleryFilters" class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all" aria-label="Show all gallery items">All</button>
+                    <button class="filter-btn" data-filter="image" aria-label="Show only images">Images</button>
+                    <button class="filter-btn" data-filter="video" aria-label="Show only videos">Videos</button>
+                </div>
+                <div id="imageEffectFilters" class="image-effect-filters">
+                    <button class="effect-btn active" data-effect="none" aria-label="Apply Normal image filter">Normal</button>
+                    <button class="effect-btn" data-effect="bw" aria-label="Apply Black and White image filter">Black &amp; White</button>
+                    <button class="effect-btn" data-effect="sepia" aria-label="Apply Sepia image filter">Sepia</button>
+                    <button class="effect-btn" data-effect="vintage" aria-label="Apply Vintage image filter">Vintage</button>
+                </div>
+                <div id="galleryGrid" class="gallery-grid">
+                    <!-- Gallery items will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Reach out to discuss your project or learn more about our services.</p>
+                <ul>
+                    <li><strong>Phone (Primary):</strong> <a href="tel:+231775909199" id="contactPrimaryPhoneDisplay">+231 77 590 9199</a> <span id="contactPrimaryPhoneSuffixDisplay">(WhatsApp)</span></li>
+                    <li><strong>Phone (Secondary):</strong> <a href="tel:+231881285299">+231 88 128 5299</a></li>
+                    <li><strong>Email (Primary):</strong> <a href="mailto:thomasjrlogan@gmail.com" id="contactEmailDisplay">thomasjrlogan@gmail.com</a></li>
+                    <li><strong>Email (Secondary):</strong> <a href="mailto:logandesign93@gmail.com" id="contactEmailSecondaryDisplay">logandesign93@gmail.com</a></li>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/231775909199" target="_blank" rel="noopener noreferrer">+231 77 590 9199</a></li>
+                    <li><strong>Address:</strong> SKD Sport Complex community, Paynesville City, Monrovia, Liberia, West Africa</li>
+                </ul>
+                <div class="social-media">
+                    <p>Follow us:</p>
+                    <a href="#" id="facebookLink" aria-label="Facebook">FB</a>
+                    <a href="#" id="instagramLink" aria-label="Instagram">IG</a>
+                    <a href="#" id="linkedInLink" aria-label="LinkedIn">LN</a>
+                    <a href="#" id="twitterLink" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quote" class="content-section">
+            <div class="container">
+                <h2>Request a Quote</h2>
+                 <div class="editable-container">
+                    <p><span data-editable-content-id="quoteIntro">Fill out the form below to get a personalized quote for your project. We'll get back to you as soon as possible.</span></p>
+                    <div class="edit-controls-container" data-controls-for="quoteIntro"></div>
+                </div>
+                <form id="quoteForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        <div id="nameError" class="form-field-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                        <div id="emailError" class="form-field-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service of Interest:</label>
+                        <select id="serviceType" name="serviceType" required aria-required="true">
+                            <option value="">--Please choose an option--</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="3d-logo-design">3D LOGO Design</option>
+                            <option value="branding">Branding</option>
+                            <option value="printing">Printing</option>
+                            <option value="interior-decoration">Interior Decoration</option>
+                            <option value="fashion-design">Fashion Design</option>
+                            <option value="web-design">Web Design</option>
+                        </select>
+                        <div id="serviceError" class="form-field-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details:</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        <div id="messageError" class="form-field-error" aria-live="polite"></div>
+                    </div>
+                    <div id="quoteFormStatus" class="form-status-message" aria-live="polite"></div>
+                    <button type="submit" class="cta-button">Submit Request</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="terms" class="content-section">
+            <div class="container">
+                <h2>Terms & Conditions</h2>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="termsIntro">Please read these terms and conditions carefully before using Our Service.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsIntro"></div>
+                </div>
+                <h3>Interpretation and Definitions</h3>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="termsInterpretation">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsInterpretation"></div>
+                </div>
+                <h3>Acknowledgment</h3>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="termsAcknowledgment">These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service. Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsAcknowledgment"></div>
+                </div>
+                 <h3>Links to Other Websites</h3>
+                <div class="editable-container">
+                    <p><span data-editable-content-id="termsLinks">Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company. The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsLinks"></div>
+                </div>
+                <h3>Governing Law</h3>
+                 <div class="editable-container">
+                    <p><span data-editable-content-id="termsGoverningLaw">The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsGoverningLaw"></div>
+                </div>
+                 <h3>Contact Us</h3>
+                 <div class="editable-container">
+                    <p><span data-editable-content-id="termsContact">If you have any questions about these Terms and Conditions, You can contact us by visiting the contact page on our website.</span></p>
+                    <div class="edit-controls-container" data-controls-for="termsContact"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Sections -->
+        <section id="admin-login" class="content-section">
+            <div class="container">
+                <h2>Admin Login</h2>
+                <form id="adminLoginForm" class="admin-form">
+                    <div id="adminLoginError" class="form-error-message"></div>
+                    <div class="form-group">
+                        <label for="adminUsername">Username</label>
+                        <input type="text" id="adminUsername" name="adminUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password</label>
+                        <input type="password" id="adminPassword" name="adminPassword" required>
+                    </div>
+                    <button type="submit" class="cta-button">Login</button>
+                    <div class="forgot-password-container">
+                        <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="admin-dashboard" class="content-section">
+            <div class="admin-container">
+                <aside class="admin-sidebar">
+                    <div class="admin-sidebar-header">
+                        <img src="logo.svg" alt="Logo" class="admin-logo">
+                        <h3>Admin Panel</h3>
+                    </div>
+                    <nav class="admin-nav">
+                        <a href="#" class="admin-nav-link active-admin-nav" data-view="admin-view-dashboard">Dashboard</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-settings">Site Settings</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-slideshows">Slideshows</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-services">Services</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-featured-work">Featured Work</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-portfolio">Portfolio</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-gallery">Gallery</a>
+                        <a href="#" class="admin-nav-link" data-view="admin-view-ceo">CEO Section</a>
+                    </nav>
+                </aside>
+        
+                <main class="admin-main-content">
+                    <header class="admin-main-header">
+                        <h2>Welcome, Admin!</h2>
+                        <button id="adminLogoutButton" class="cta-button logout-button">Logout</button>
+                    </header>
+        
+                    <div class="admin-views-container">
+                        <!-- Dashboard View -->
+                        <div id="admin-view-dashboard" class="admin-view active-admin-view">
+                            <h3>Site Overview</h3>
+                            <div class="stats-container">
+                                <div class="stat-card">
+                                    <div class="stat-card-text">
+                                        <h4>Services Offered</h4>
+                                        <p id="statsServicesCount">0</p>
+                                    </div>
+                                    <div class="stat-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-text">
+                                        <h4>Featured Projects</h4>
+                                        <p id="statsFeaturedWorkCount">0</p>
+                                    </div>
+                                    <div class="stat-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-text">
+                                        <h4>Gallery Items</h4>
+                                        <p id="statsGalleryCount">0</p>
+                                    </div>
+                                    <div class="stat-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-card-text">
+                                        <h4>Portfolio Items</h4>
+                                        <p id="statsPortfolioCount">0</p>
+                                    </div>
+                                    <div class="stat-card-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin-content-panel">
+                                <h3>Quick Actions</h3>
+                                <p>Select an option from the sidebar to manage your site's content.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Site Settings View -->
+                        <div id="admin-view-settings" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Site Settings & Logo</h3>
+                                <form id="siteSettingsForm" class="admin-form">
+                                    <div class="form-group"><label for="adminSiteTitleInput">Site Title</label><input type="text" id="adminSiteTitleInput"></div>
+                                    <div class="form-group"><label for="adminContactEmailInput">Primary Contact Email</label><input type="email" id="adminContactEmailInput"></div>
+                                    <div class="form-group"><label for="adminContactEmailSecondaryInput">Secondary Contact Email</label><input type="email" id="adminContactEmailSecondaryInput"></div>
+                                    <div class="form-group"><label for="adminPrimaryPhoneInput">Primary Phone</label><input type="tel" id="adminPrimaryPhoneInput"></div>
+                                    <div class="form-group"><label for="adminPrimaryPhoneSuffixInput">Primary Phone Suffix (e.g., WhatsApp)</label><input type="text" id="adminPrimaryPhoneSuffixInput"></div>
+                                    <div class="form-group"><label for="adminFacebookUrlInput">Facebook URL</label><input type="text" id="adminFacebookUrlInput"></div>
+                                    <div class="form-group"><label for="adminInstagramUrlInput">Instagram URL</label><input type="text" id="adminInstagramUrlInput"></div>
+                                    <div class="form-group"><label for="adminLinkedInUrlInput">LinkedIn URL</label><input type="text" id="adminLinkedInUrlInput"></div>
+                                    <div class="form-group"><label for="adminTwitterUrlInput">Twitter URL</label><input type="text" id="adminTwitterUrlInput"></div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="siteLogoInput">Update Site Logo</label>
+                                        <input type="file" id="siteLogoInput" accept="image/*">
+                                        <div id="siteLogoStatusMessage" class="form-status-message"></div>
+                                    </div>
+                                    <button type="submit" class="cta-button">Save Site Settings</button>
+                                    <div id="siteSettingsStatusMessage" class="form-status-message"></div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Slideshows View -->
+                        <div id="admin-view-slideshows" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Homepage Slideshow</h3>
+                                <form id="addSlideForm" class="admin-form">
+                                    <div class="form-group"><label for="slideImageInput">Add New Slide Image</label><input type="file" id="slideImageInput" accept="image/*" required></div>
+                                    <button type="submit" class="cta-button">Upload Slide</button>
+                                    <div id="addSlideStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Slides</h4>
+                                <div id="adminSlideshowList" class="admin-slideshow-list-container"></div>
+                            </div>
+                            <div class="admin-content-panel">
+                                <h3>Manage About Us Slideshow</h3>
+                                <form id="addAboutSlideForm" class="admin-form">
+                                    <div class="form-group"><label for="aboutSlideImageInput">Add New Slide Image</label><input type="file" id="aboutSlideImageInput" accept="image/*" required></div>
+                                    <button type="submit" class="cta-button">Upload Slide</button>
+                                    <div id="addAboutSlideStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Slides</h4>
+                                <div id="adminAboutSlideshowList" class="admin-slideshow-list-container"></div>
+                            </div>
+                            <div class="admin-content-panel">
+                                <h3>Manage Portfolio Slideshow</h3>
+                                <form id="addPortfolioSlideForm" class="admin-form">
+                                    <div class="form-group"><label for="portfolioSlideImageInput">Add New Portfolio Slide Image</label><input type="file" id="portfolioSlideImageInput" accept="image/*" required></div>
+                                    <button type="submit" class="cta-button">Upload Portfolio Slide</button>
+                                    <div id="addPortfolioSlideStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Portfolio Slides</h4>
+                                <div id="adminPortfolioSlideshowList" class="admin-slideshow-list-container"></div>
+                            </div>
+                        </div>
+        
+                        <!-- Services View -->
+                        <div id="admin-view-services" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Services</h3>
+                                <form id="addServiceForm" class="admin-form">
+                                    <div class="form-group"><label for="serviceImageInput">Service Image</label><input type="file" id="serviceImageInput" accept="image/*" required></div>
+                                    <div class="form-group"><label for="serviceTitleInput">Service Title</label><input type="text" id="serviceTitleInput" required></div>
+                                    <div class="form-group"><label for="serviceCategoryInput">Service Category</label><input type="text" id="serviceCategoryInput" required placeholder="e.g., Branding, Digital, Print"></div>
+                                    <div class="form-group"><label for="serviceDescriptionInput">Service Description</label><textarea id="serviceDescriptionInput" rows="3" required></textarea></div>
+                                    <button type="submit" class="cta-button">Add Service</button>
+                                    <div id="addServiceStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Services</h4>
+                                <div id="adminServicesList"></div>
+                            </div>
+                        </div>
+
+                        <!-- Featured Work View -->
+                        <div id="admin-view-featured-work" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Featured Work</h3>
+                                <form id="addFeaturedWorkForm" class="admin-form">
+                                    <div class="form-group"><label for="featuredWorkImageInput">Project Image</label><input type="file" id="featuredWorkImageInput" accept="image/*" required></div>
+                                    <div class="form-group"><label for="featuredWorkTitleInput">Project Title</label><input type="text" id="featuredWorkTitleInput" required></div>
+                                    <div class="form-group"><label for="featuredWorkDescriptionInput">Project Description</label><textarea id="featuredWorkDescriptionInput" rows="3" required></textarea></div>
+                                    <button type="submit" class="cta-button">Add Featured Project</button>
+                                    <div id="addFeaturedWorkStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Featured Projects</h4>
+                                <div id="adminFeaturedWorkList"></div>
+                            </div>
+                        </div>
+        
+                        <!-- Portfolio View -->
+                        <div id="admin-view-portfolio" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Portfolio</h3>
+                                <form id="addPortfolioItemForm" class="admin-form">
+                                    <div class="form-group"><label for="portfolioImageInput">Portfolio Image</label><input type="file" id="portfolioImageInput" accept="image/*" required></div>
+                                    <div class="form-group"><label for="portfolioTitleInput">Portfolio Title</label><input type="text" id="portfolioTitleInput" required></div>
+                                    <button type="submit" class="cta-button">Add Portfolio Item</button>
+                                    <div id="addPortfolioStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Portfolio Items</h4>
+                                <div id="adminPortfolioItemsList"></div>
+                            </div>
+                        </div>
+        
+                        <!-- Gallery View -->
+                        <div id="admin-view-gallery" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage Gallery</h3>
+                                <form id="addGalleryItemForm" class="admin-form">
+                                    <div class="form-group">
+                                        <label for="galleryFileInput">Gallery File (Image/Video)</label>
+                                        <input type="file" id="galleryFileInput" accept="image/*,video/*" required>
+                                    </div>
+                                    <div class="form-group" id="galleryCaptionContainer" style="display: none;">
+                                        <label for="galleryCaptionInput">Caption File (for Videos, .vtt/.srt)</label>
+                                        <input type="file" id="galleryCaptionInput" accept=".vtt,.srt">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="galleryTitleInput">Item Title</label>
+                                        <input type="text" id="galleryTitleInput" required>
+                                    </div>
+                                    <button type="submit" class="cta-button">Add Gallery Item</button>
+                                    <div id="addGalleryStatusMessage" class="form-status-message"></div>
+                                </form>
+                                <hr>
+                                <h4>Current Gallery Items</h4>
+                                <div id="adminGalleryItemsList"></div>
+                            </div>
+                        </div>
+
+                        <!-- CEO Section View -->
+                        <div id="admin-view-ceo" class="admin-view">
+                            <div class="admin-content-panel">
+                                <h3>Manage CEO Section</h3>
+                                <form id="ceoInfoForm" class="admin-form">
+                                    <div class="form-group"><label for="ceoImageInput">CEO Photo</label><input type="file" id="ceoImageInput" accept="image/*"></div>
+                                    <div class="form-group"><label for="ceoNameInput">CEO Name</label><input type="text" id="ceoNameInput" required></div>
+                                    <div class="form-group"><label for="ceoMessageInput">CEO Message</label><textarea id="ceoMessageInput" rows="5" required></textarea></div>
+                                    <button type="submit" class="cta-button">Update CEO Info</button>
+                                    <div id="ceoInfoStatusMessage" class="form-status-message"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget-container" id="chatWidgetContainer">
+        <button id="chatToggleButton" class="chat-toggle-button" aria-label="Open AI chat assistant">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+        </button>
+        <div id="chatWindow" class="chat-window" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="chat-header">
+                <h3>AI Assistant</h3>
+                <button id="chatCloseButton" class="chat-close-button" aria-label="Close chat">&times;</button>
+            </div>
+            <div class="chat-body">
+                <div id="chatMessages" class="chat-messages">
+                    <!-- AI and user messages will be appended here by JavaScript -->
+                </div>
+                <form id="aiChatForm" class="chat-input-form">
+                    <input type="text" id="aiChatInput" placeholder="Ask about our services..." autocomplete="off" aria-label="Chat message input">
+                    <button type="submit" id="aiChatSendButton" aria-label="Send message">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" title="Close" aria-label="Close image viewer">&times;</button>
+        <img class="lightbox-content" id="lightboxImage" alt="Enlarged gallery image">
+        <div id="lightboxCaption"></div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> <span data-editable-content-id="footerCopyrightText">LOGAN'S DESIGN. All Rights Reserved.</span> | <a href="#terms" class="footer-admin-link">Terms & Conditions</a> | <a href="#admin-login" id="adminLoginFooterLink" class="footer-admin-link">Admin Login</a></p>
+            <div class="edit-controls-container" data-controls-for="footerCopyrightText"></div>
+        </div>
+    </footer>
+
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
